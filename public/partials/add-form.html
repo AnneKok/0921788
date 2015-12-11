@@ -1,0 +1,22 @@
+<navigation></navigation>
+<div class="row">
+  <div class="col xs-12 col-sm-10 col-sm-offset-1 col-lg-6 col-lg-offset-3">
+    <h1>Add a player</h1>
+    <form>
+        <div class="form-group">
+            <label>Name</label>
+            <input class="form-control" ng-model="video.title"></input>
+        </div>
+        <div class="form-group">
+            <label>Country</label>
+            <input class="form-control" ng-model="video.country"></input>
+        </div>
+        <div class="form-group">
+            <label>Description</label>
+            <textarea class="form-control" rows="5" ng-model="video.description"></textarea>
+        </div>
+        <input type="button" class="btn btn-success" value="Save" ng-click="save()"></input>
+        <a class="btn btn-default" href="/#/">Cancel</a>
+    </form>
+  </div>
+</div>

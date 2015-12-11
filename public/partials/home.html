@@ -1,0 +1,30 @@
+<navigation></navigation>
+<div class="row">
+  <div class="col xs-12 col-sm-10 col-sm-offset-1 col-lg-6 col-lg-offset-3">
+    <h1>Tennis Time!</h1>
+    <div class="intro">
+      <p>
+        Here, you can find a list of ATP World Tour tennis players.
+        The ATP World Tour the global elite men's professional tennis circuit organized by the Association of Tennis Professionals (ATP) for the 2015 tennis season. The 2015 ATP World Tour calendar comprises the Grand Slam tournaments (supervised by the International Tennis Federation), the ATP World Tour Masters 1000, the ATP World Tour 500 series, the ATP World Tour 250 series, the Davis Cup (organized by the ITF) and the ATP World Tour Finals.
+      </p>
+      <p>
+        Feel free to <a href="/#/add-form">add a player</a> if you know an ATP player who isn't listed, or delete a player if he does not belong in this list.
+      </p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col xs-12 col-sm-10 col-sm-offset-1 col-lg-6 col-lg-offset-3">
+    <h1>List of tennis players</h1>
+
+    <div class="item" ng-repeat='player in videos' on-last-repeat>
+      <div class="name">{{player.title}}</div>
+      <div class="country">{{player.country}}</div>
+      <div class="description">{{player.description}}</div>
+      <div class="modify">
+        <a class="btn btn-default edit" href="/#/video/{{player._id}}">Edit</a>
+        <a class="btn btn-default delete" href="/#/video/delete/{{player._id}}">Delete</a>
+      </div>
+    </div>
+  </div>
+</div>
